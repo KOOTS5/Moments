@@ -23,7 +23,7 @@ function HomePage() {
 
   async function handleAddEntry() {
     const res = await axios.post(
-      "https://momentsorbital.herokuapp.com/journal/",
+      "https://moments-personal.herokuapp.com//journal/",
       {
         date: format(date, "yyyy-MM-dd"),
         title: "Journal Title",
@@ -43,7 +43,7 @@ function HomePage() {
     handleUnselectEntry(entry);
     // await axios.delete(`http://localhost:5000/journal/${entry._id}`)
     await axios.delete(
-      `https://momentsorbital.herokuapp.com/journal/${entry._id}`
+      `https://moments-personal.herokuapp.com//journal/${entry._id}`
     );
     removeEntry(index);
   }
@@ -77,7 +77,7 @@ function HomePage() {
     async function fetchData() {
       // const queryObject = await axios.get(`http://localhost:5000/journal/${format(date, 'yyyy-MM-dd')}`);
       const queryObject = await axios.get(
-        `https://momentsorbital.herokuapp.com/journal/${format(
+        `https://moments-personal.herokuapp.com//journal/${format(
           date,
           "yyyy-MM-dd"
         )}`

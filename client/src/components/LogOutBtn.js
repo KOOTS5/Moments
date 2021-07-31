@@ -11,7 +11,7 @@ function LogOutBtn(prop) {
   async function logOut() {
     prop.setSuccessMessage("");
     // await axios.get("http://localhost:5000/auth/logout");
-    await axios.get("https://momentsorbital.herokuapp.com/auth/logout");
+    await axios.get("https://moments-personal.herokuapp.com//auth/logout");
     await getLoggedIn();
     history.push("/");
   }

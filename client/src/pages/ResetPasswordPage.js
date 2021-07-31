@@ -25,7 +25,7 @@ function ResetPasswordPage() {
       //   verifyData
       // );
       await axios.post(
-        "https://momentsorbital.herokuapp.com/auth/reset-password/",
+        "https://moments-personal.herokuapp.com//auth/reset-password/",
         verifyData
       );
       history.push("/success");

@@ -224,7 +224,7 @@ function EditProfileBtn(prop) {
       // await axios
       //   .put("http://localhost:5000/userProfile/", newUserData)
       await axios
-        .put("https://momentsorbital.herokuapp.com/userProfile/", newUserData)
+        .put("https://moments-personal.herokuapp.com//userProfile/", newUserData)
         .then((response) => {
           prop.setSuccessMessage(response.data.successMessage);
         });
@@ -246,7 +246,7 @@ function EditProfileBtn(prop) {
       //   .put("http://localhost:5000/userProfile/email", newEmailData)
       await axios
         .put(
-          "https://momentsorbital.herokuapp.com/userProfile/email/",
+          "https://moments-personal.herokuapp.com//userProfile/email/",
           newEmailData
         )
         .then((response) => {
@@ -269,7 +269,7 @@ function EditProfileBtn(prop) {
       //   .put("http://localhost:5000/userProfile/password", newPasswordData)
       await axios
         .put(
-          "https://momentsorbital.herokuapp.com/userProfile/password/",
+          "https://moments-personal.herokuapp.com//userProfile/password/",
           newPasswordData
         )
         .then((response) => {
@@ -293,7 +293,7 @@ function EditProfileBtn(prop) {
       //   passwordData
       // );
       await axios.post(
-        "https://momentsorbital.herokuapp.com/userProfile/deleteAccount",
+        "https://moments-personal.herokuapp.com//userProfile/deleteAccount",
         passwordData
       );
       closeDeletePage();
@@ -357,7 +357,7 @@ function EditProfileBtn(prop) {
           <h5 className="edit-labels">Profile Picture</h5>
           <div id="image-preview" >
             <img
-              src={`https://momentsorbital.herokuapp.com/images/${prop.profilePic}`}
+              src={`https://moments-personal.herokuapp.com//images/${prop.profilePic}`}
               // src={`http://localhost:5000/images/${prop.profilePic}`}
               alt="profile-pic"
               onClick={() => setEditPicture(!editPicture)}

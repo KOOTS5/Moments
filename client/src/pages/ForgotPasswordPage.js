@@ -18,7 +18,7 @@ function ForgotPasswordPage() {
       //   emailData
       // );
       await axios.post(
-        "https://momentsorbital.herokuapp.com/auth/forgot-password/",
+        "https://moments-personal.herokuapp.com//auth/forgot-password/",
         emailData
       );
       history.push("/resetemail");

@@ -10,7 +10,7 @@ function AddEventForm(props) {
     try {
       // await axios.post("http://localhost:5000/events/add", event);
       await axios.post(
-        "https://momentsorbital.herokuapp.com/events/add/",
+        "https://moments-personal.herokuapp.com//events/add/",
         event
       );
       props.setTitle("");
