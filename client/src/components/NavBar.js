@@ -19,7 +19,7 @@ function NavBar() {
     try {
       // axios.get("http://localhost:5000/userProfile/")
       axios
-        .get("https://moments-personal.herokuapp.com//userProfile")
+        .get("https://moments-personal.herokuapp.com/userProfile")
         .then((response) => {
           const { name, profilePic, teleCode } = response.data;
           setName(name);
@@ -82,7 +82,7 @@ function NavBar() {
             </h5>
             <img
               // src={`http://localhost:5000/images/${profilePic}`}
-              src={`https://moments-personal.herokuapp.com//images/${profilePic}`}
+              src={`https://moments-personal.herokuapp.com/images/${profilePic}`}
               alt="profile-pic"
             />
             <div id="settings-menu">

@@ -9,7 +9,7 @@ function AuthContextProvider(props) {
   async function getLoggedIn() {
     // const loggedInRes = await axios.get("http://localhost:5000/auth/loggedIn");
     const loggedInRes = await axios.get(
-      "https://moments-personal.herokuapp.com//auth/loggedIn"
+      "https://moments-personal.herokuapp.com/auth/loggedIn"
     );
     setLoggedIn(loggedInRes.data);
   }

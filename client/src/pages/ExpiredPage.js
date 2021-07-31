@@ -15,7 +15,7 @@ function ExpiredPage() {
       const emailData = { email };
       // await axios.post("http://localhost:5000/confirmation/resend/", emailData);
       await axios.post(
-        "https://moments-personal.herokuapp.com//confirmation/resend/",
+        "https://moments-personal.herokuapp.com/confirmation/resend/",
         emailData
       );
       history.push("/confirmation");

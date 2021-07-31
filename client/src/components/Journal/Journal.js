@@ -142,7 +142,7 @@ function Journal(props) {
     // Because useState is asynchronous, I set using e.target.value instead of input.
     // await axios.put(`http://localhost:5000/journal/${entry._id}`, newEntry)
     await axios.put(
-      `https://moments-personal.herokuapp.com//journal/${entry._id}`,
+      `https://moments-personal.herokuapp.com/journal/${entry._id}`,
       newEntry
     );
   }
@@ -159,7 +159,7 @@ function Journal(props) {
     // Because useState is asynchronous, I set using e.target.value instead of input.
     // await axios.put(`http://localhost:5000/journal/${entry._id}`, newEntry)
     await axios.put(
-      `https://moments-personal.herokuapp.com//journal/${entry._id}`,
+      `https://moments-personal.herokuapp.com/journal/${entry._id}`,
       newEntry
     );
   }
@@ -175,7 +175,7 @@ function Journal(props) {
     props.editHandler(newEntry);
     // await axios.put(`http://localhost:5000/journal/${entry._id}`, newEntry)
     await axios.put(
-      `https://moments-personal.herokuapp.com//journal/${entry._id}`,
+      `https://moments-personal.herokuapp.com/journal/${entry._id}`,
       newEntry
     );
     props.dateChangeHandler(date);
@@ -184,7 +184,7 @@ function Journal(props) {
     //   newEntry
     // );
     const numPosts = await axios.get(
-      `https://moments-personal.herokuapp.com//journal/${format(
+      `https://moments-personal.herokuapp.com/journal/${format(
         date,
         "yyyy-MM-dd"
       )}`,
@@ -262,7 +262,7 @@ function Journal(props) {
     props.editHandler(newEntry, index);
     // await axios.put(`http://localhost:5000/journal/${entry._id}`, newEntry);
     await axios.put(
-      `https://moments-personal.herokuapp.com//journal/${entry._id}`,
+      `https://moments-personal.herokuapp.com/journal/${entry._id}`,
       newEntry
     );
   }

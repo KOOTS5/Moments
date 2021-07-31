@@ -22,7 +22,7 @@ function LoginPage() {
       };
       // await axios.post("http://localhost:5000/auth/login", loginData);
       await axios.post(
-        "https://moments-personal.herokuapp.com//auth/login",
+        "https://moments-personal.herokuapp.com/auth/login",
         loginData
       );
       await getLoggedIn();
