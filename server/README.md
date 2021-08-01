@@ -2,3 +2,4 @@
 
 Fill in values in .env folder
 Run yarn start in server folder
+A
